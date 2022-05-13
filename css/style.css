@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 26px;
+	/* по умолчанию */
+}
+
+body {
+	line-height: 1;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.exercise_1,
+.exercise_2,
+.exercise_3,
+.exercise_4,
+.exercise_5,
+.exercise_6,
+.exercise_7,
+.exercise_8,
+.exercise_9,
+.exercise_10,
+.exercise_11,
+.text_2,
+.text_3,
+.text_4 {
+padding: 20px;
+max-width: 700px;
+}
+
+.exercise_1 {
+ background: yellowgreen;
+}
+.exercise_1:hover .button{
+	opacity: 1;
+	visibility: visible;
+}
+.button{
+	color: green;
+	opacity: 0;
+	visibility: hidden;
+}
+.button:hover{
+	color: red;
+}
+.button_2 {
+	color: green;
+}
+.button_2:visited{
+	color: rgb(255, 0, 0);
+}
+.button_3 {
+	background: linear-gradient(to right, #169ed6, #3479f1, #1fbdf3, #4f8de6);
+		box-shadow: 0 4px 15px 0 rgba(52, 120, 222, 0.75);
+	padding: 20px 35px;
+	border-radius: 30px;
+	box-shadow: 0px 8px 5px rgb(10, 37, 10);
+}
+.button_3:hover{
+	color: rgb(207, 28, 22);
+}
+.button_3:active{
+	box-shadow: 0px 2px 0px rgb(10, 37, 10);
+}
+.windou {
+	background: url('../img/Image 1.png') 0 0 no-repeat;
+	background-size: 100%;
+	max-width: 650px;
+	text-shadow: 1px 1px 1px rgb(3, 0, 5);
+	color: white;
+	padding: 20px;
+	display: none;
+}
+.windou:target {
+	display: block;
+}
+.text{
+	padding: 20px;
+}
+.text *:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+	max-width: 650px;
+}
+.text *:first-child{
+	color: green;
+}
+.text p:nth-child(2){
+	color: yellow;
+	text-shadow: 2px 2px 2px black;
+}
+.text *:not(:last-of-type){
+	color: red;
+}
+.text_2::first-line{
+	color: red;
+}
+.text_3 p{
+	text-indent: 25px;
+}
+.text_3 p::first-letter{
+   color: red;
+	font-weight: bold;
+	font-size: 45px;
+} 
+.text_3::after{
+	background-color: blue;
+	width: 50%;
+	height: 3px;
+	content:"";
+	display: block;
+	margin-bottom: 10px;
+}
+.text_4 p {
+	text-indent: 25px;
+}
+
+ .text_4 p::before{
+	content: "";
+	background-color: red;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: top;
+} 
+.line {
+	margin-bottom: 25px;
+}
+.line li{
+	margin: 0px 0px 0px 45px;
+	color: red;
+}
+.line li::before{
+   content: "";
+	background-color: red;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 5px 10px 0px 0px;
+	vertical-align: top;
+}
+
+.line li:hover::before{
+	background-color: blue;
+}
+.line_2{
+	counter-reset: item;
+}
+.line_2 li{
+	margin: 0px 0px 5px 25px;
+}
+.line_2 li::before{
+counter-increment: item;
+content: counter(item) ")";
+color: red;
+margin: 0px 5px 0px 0px;
+display: inline-block;
+}
